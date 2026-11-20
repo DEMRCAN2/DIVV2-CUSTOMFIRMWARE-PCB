@@ -1,0 +1,71 @@
+🖥️ TFT Display (ILI9341) — Wiki Standard
+
+    SCK (CLK): GPIO 36
+    MOSI (DIN): GPIO 35
+    MISO (DO): GPIO 37
+    CS: GPIO 17
+    DC (RS): GPIO 16
+    RESET: EN / RESET
+    Backlight (BL): GPIO 7
+👆 Touch Screen (XPT2046)
+
+    SCK (T_CLK): GPIO 36
+    MOSI (T_DIN): GPIO 35
+    MISO (T_DO): GPIO 37
+    CS (T_CS): GPIO 18
+    IRQ (T_IRQ): Disabled (255)
+
+)
+
+💾 SD Card (SPI)
+
+    SCK (SCLK): GPIO 12
+    MOSI: GPIO 11
+    MISO: GPIO 13
+    CS: GPIO 10 (Note: SD_CS_PIN 5 is also defined in code)
+    CD (Card Detect): GPIO 38
+
+📡 NRF24 Modules (3x — Shared SPI Bus)
+
+    SCK: GPIO 12
+    MOSI: GPIO 11
+    MISO: GPIO 13
+    NRF24 #1: CE = GPIO 15 | CSN = GPIO 4
+    NRF24 #2: CE = GPIO 47 | CSN = GPIO 48
+    NRF24 #3 (Scanner/ESB): CE = GPIO 14 | CSN = GPIO 21
+
+📻 CC1101 (Sub-GHz — Shared SPI Bus)
+
+    SCK: GPIO 12
+    MOSI: GPIO 11
+    MISO: GPIO 13
+    CSN (CS): GPIO 5
+    GDO0 (TX): GPIO 6
+    GDO2 (RX): GPIO 3
+
+💳 PN532 RFID / NFC (Shared SPI Bus)
+
+    SCK: GPIO 12
+    MOSI: GPIO 11
+    MISO: GPIO 13
+    SS (CS): GPIO 8 (Modified from Wiki's GPIO 4)
+
+🔦 Infrared (IR Remote)
+
+    IR RX: GPIO 21 (Shares pin with NRF24 #3 CSN)
+    IR TX: GPIO 14 (Shares pin with NRF24 #3 CE)
+
+🎮 Navigation Buttons (Direct GPIO)
+
+    UP: GPIO 39
+    DOWN: GPIO 40
+    LEFT: GPIO 41
+    RIGHT: GPIO 42
+    SELECT: GPIO 45
+
+🔌 External UART & System
+
+    UART RX: GPIO 6 (Shares pin with CC1101 GDO0/TX)
+    UART TX: GPIO 3 (Shares pin with CC1101 GDO2/RX)
+    Buzzer: Disabled (-1)
+    Battery ADC: Disabled (-1)
