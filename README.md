@@ -14,6 +14,13 @@ Software (Modified Firmware)
   Custom Pin Definitions: Updated firmware pin mappings to fully support the custom PCB.
   Feature Enhancements: Removed GPS and annoying PCF8574 module for easy wiring buttons
   Bug Fixes & Optimization: Cleaned up unused code and optimized memory usage.
+## ⚠️ Disclaimer
+
+This project, including all hardware designs (PCB) and firmware, is provided strictly for **educational, research, and authorized security testing purposes only**. 
+
+* **Legal Compliance:** Users are solely responsible for ensuring that their use of this hardware and software complies with all applicable local, national, and international laws and regulations regarding radio frequency (RF) transmissions and wireless communications.
+* **No Liability:** The author and contributors assume no liability and are not responsible for any misuse, damage, or legal consequences resulting from the use or modification of the files provided in this repository.
+* **Authorized Use Only:** Do not use this project to interfere with, disrupt, or access networks, devices, or frequencies without explicit permission from the rightful owner.
 
 
 
