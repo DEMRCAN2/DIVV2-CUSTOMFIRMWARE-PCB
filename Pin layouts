@@ -24,6 +24,7 @@
     MISO: GPIO 13
     CS: GPIO 10 (Note: SD_CS_PIN 5 is also defined in code)
     CD (Card Detect): GPIO 38
+    If you have an 6 pin sd module connect GPIO 38 to GND
 
 📡 NRF24 Modules (3x — Shared SPI Bus)
 
