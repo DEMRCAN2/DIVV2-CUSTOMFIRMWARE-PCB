@@ -14,3 +14,41 @@ Software (Modified Firmware)
   Custom Pin Definitions: Updated firmware pin mappings to fully support the custom PCB.
   Feature Enhancements: Removed GPS and annoying PCF8574 module for easy wiring buttons
   Bug Fixes & Optimization: Cleaned up unused code and optimized memory usage.
+
+
+
+
+
+
+
+
+
+
+
+
+## ⚙️ Firmware Build Environment
+
+* **Arduino IDE:** `v2.x`
+* **ESP32 Board Package:** `2.0.10` or `2.0.11` (*Espressif Systems* — replace `platform.txt` using the modified file from [cifertech/ESP32-DIV](https://github.com))
+* **Board:** `ESP32S3 Dev Module`
+* **Flash Size:** `16MB (128Mb)`
+* **Partition Scheme:** `Minimal SPIFFS (1.9MB APP with OTA/190KB SPIFFS)`
+* **PSRAM:** `OPI PSRAM`
+* **Upload Speed:** `921600`
+
+---
+
+## 📚 Required Libraries
+
+| Library | Version |
+| :--- | :--- |
+| **TFT_eSPI** *(Custom)* | `v2.5.x` |
+| **XPT2046_Touchscreen** | `v1.4` |
+| **RF24** *(Custom)* | `v1.4.x` |
+| **ELECHOUSE_CC1101_SRC_DRV** *(Custom)* | `v2.5.x` |
+| **rc-switch** | `v2.6.4` |
+| **IRremoteESP8266** | `v2.8.x` |
+| **Adafruit PN532** | `v1.3.x` |
+| **Adafruit NeoPixel** | `v1.12.x` |
+| **ArduinoJson** | `v6.21.x` / `v7.x` |
+| **SD / SPI / FS / WiFi / BLE** | *Built-in (ESP32 Core 2.0.10)* |
