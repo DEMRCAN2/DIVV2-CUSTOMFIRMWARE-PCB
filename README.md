@@ -13,6 +13,7 @@ Software (Modified Firmware)
 
   Custom Pin Definitions: Updated firmware pin mappings to fully support the custom PCB.
   Feature Enhancements: Removed GPS and annoying PCF8574 module for easy wiring buttons
+  And added some suprise features to wifi deauther, ble spammer, wifi handshake capture, subghz stuff if yall look yall will see
   Bug Fixes & Optimization: Cleaned up unused code and optimized memory usage.
 ## ⚠️ Disclaimer
 
